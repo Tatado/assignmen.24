@@ -1,0 +1,38 @@
+1. Nothing, if a module has already been imported, it's not loaded again.
+ You will simply get a reference to the module that has already been imported (it will come from sys. modules ).
+Imports should be grouped in the following order: standard library imports. related third party imports,
+It should put a blank line between each group of imports.
+2.
+A module is a software component or part of a program that contains one or more routines. 
+One or more independently developed modules make up a program.
+ An enterprise-level software application may contain several different modules, 
+and each module serves unique and separate business operations.
+Built-in Modules.
+3.
+here is a good workaround Python circular import error that you can import the module itself 
+rather than importing object/function from the module. This way you can import and 
+use all the objects and variables from the module.
+Importing The Module Itself.
+Rename Your Working file.
+Avoid Circular Import Calls.
+4.
+In the __init__.py file of a package __all__ is a list of strings with the names of public modules or other objects.
+ Those features are available to wildcard imports. 
+As with modules, __all__ customizes the * when wildcard-importing from the package.
+5.
+If the python interpreter is running that module (the source file) # as the main program, it sets the special __name__ variable to have # a value “__main__”.
+ If this file is being imported from another # module, __name__ will be set to the module's name. if __name__=='__main__': # do something.
+6.
+Benefits: RPN saves time and keystrokes. we avoid using and keeping track of parentheses while doing calculations. The process is similar to the way you learned math on paper.
+ we can see the intermediary results as we perform our computations rather than just the answer at the end.
+Push 3 onto the stack.
+Push 5 onto the stack. Reading from the top, the stack now contains (5, 3).
+Apply the + operation: take the top two numbers off the stack, add them together, and put the result back on the stack. The stack now contains just the number 8.
+Push 7 onto the stack.
+Push 2 onto the stack. It now contains (2, 7, 8).
+Apply the – operation: take the top two numbers off the stack, subtract the top one from the one below, and put the result back on the stack. The stack now contains (5, 8).
+Apply the * operation: take the top two numbers off the stack, multiply them together, and put the result back on the stack. The stack now contains just the number 40.
+7.
+In programming language terminology, an “expression” is a combination of values and functions that are combined and 
+interpreted by the compiler to create a new value,
+ as opposed to a “statement” which is just a standalone unit of execution and doesn't return anything.
